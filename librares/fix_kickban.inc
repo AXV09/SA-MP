@@ -11,13 +11,13 @@
 
 #define Kick(%1)	FIX_Kick(%1)
 #define Ban(%1)		FIX_Ban(%1)
-#define BanEx(%1)	FIX_BanEx(%1)
+#define BanEx(%1,%2)	FIX_BanEx(%1,%2)
 
 #include <a_samp>
 
 native fixedKick(playerid) = Kick;
 native fixedBan(playerid) = Ban;
-native fixedBanEx(playerid, const reason[]) = BanEx(playerid, reason);
+native fixedBanEx(playerid, const reason[]) = BanEx;
 
 
 // functions
